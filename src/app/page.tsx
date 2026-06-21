@@ -1692,7 +1692,10 @@ export default function Home() {
                 </div>
               </div>
               <div className="site-footer-right">
-                Cite as: Mehta A, Iyer R, Khan S. 2026.
+                <div>Cite as: Mehta A, Iyer R, Khan S. 2026.</div>
+                <div style={{ marginTop: "0.5rem", color: "var(--slate-light)", fontSize: "10.5px" }}>
+                  Developed by Yazhini Diwagaran, Muruganandam Harishree, Sanjay
+                </div>
               </div>
             </div>
           </div>

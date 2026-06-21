@@ -1690,6 +1690,21 @@ a {
     gap: 1.5rem;
     text-align: center;
   }
+  /* Disable scroll reveal animations on mobile to ensure all content is immediately visible */
+  .reveal,
+  .section > .container,
+  .section .section-eyebrow,
+  .section .section-heading,
+  .section .spotlight-card,
+  .section .diff-table-container,
+  .section .quiz-container,
+  .section .tutor-container,
+  .section .leaderboard-container,
+  .timeline-strip-item.reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2513,3 +2528,23 @@ a {
     transition: none !important;
   }
 }
+
+/* Beautiful Clinical Text Highlights */
+.highlight {
+  background: linear-gradient(120deg, rgba(29, 158, 117, 0.12) 0%, rgba(29, 158, 117, 0.22) 100%);
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: var(--navy);
+  border-bottom: 2px solid rgba(29, 158, 117, 0.35);
+}
+
+.highlight-danger {
+  background: linear-gradient(120deg, rgba(224, 76, 76, 0.10) 0%, rgba(224, 76, 76, 0.18) 100%);
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #c53030;
+  border-bottom: 2px solid rgba(224, 76, 76, 0.3);
+}
+
