@@ -87,6 +87,7 @@ export default function Home() {
   const [aiInput, setAiInput] = useState("");
   const [isAiTyping, setIsAiTyping] = useState(false);
   const chatEndRef = useRef<HTMLDivElement>(null);
+  const isChatMounted = useRef(false);
 
   // Leaderboard State (Section 10)
   const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[]>([
@@ -187,6 +188,10 @@ export default function Home() {
 
   // Auto Scroll Chat
   useEffect(() => {
+    if (!isChatMounted.current) {
+      isChatMounted.current = true;
+      return;
+    }
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [aiMessages, isAiTyping]);
 
