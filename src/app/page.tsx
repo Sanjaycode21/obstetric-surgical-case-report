@@ -958,49 +958,49 @@ export default function Home() {
                     <td>
                       <span className="diff-badge confirmed">CONFIRMED</span>
                     </td>
-                    <td>MRI demonstrated malrotation with volvulus; confirmed intraoperatively during emergency laparoscopic Ladd&apos;s procedure.</td>
+                    <td>MRI demonstrated <span className="highlight-danger">malrotation with volvulus</span>; confirmed intraoperatively during emergency <span className="highlight">laparoscopic Ladd&apos;s procedure</span>.</td>
                   </tr>
                   <tr>
                     <td>Acute appendicitis</td>
                     <td>
                       <span className="diff-badge co-existing">CO-EXISTING PATHOLOGY</span>
                     </td>
-                    <td>Histopathology showed acute appendicitis with mucosal ulceration and neutrophilic infiltration following appendectomy; however, it did not explain the intestinal obstruction.</td>
+                    <td>Histopathology showed <span className="highlight-danger">acute appendicitis</span> with <span className="highlight-danger">mucosal ulceration</span> and <span className="highlight">neutrophilic infiltration</span> following appendectomy; however, it did not explain the <span className="highlight-danger">intestinal obstruction</span>.</td>
                   </tr>
                   <tr>
                     <td>Acute cholecystitis</td>
                     <td>
                       <span className="diff-badge excluded">EXCLUDED</span>
                     </td>
-                    <td>Abdominal ultrasound showed a normal gallbladder without calculi or wall thickening.</td>
+                    <td>Abdominal ultrasound showed a <span className="highlight">normal gallbladder</span> without calculi or wall thickening.</td>
                   </tr>
                   <tr>
                     <td>Acute pancreatitis</td>
                     <td>
                       <span className="diff-badge excluded">EXCLUDED</span>
                     </td>
-                    <td>Pancreas appeared normal on ultrasound; serum amylase and lipase within normal limits.</td>
+                    <td>Pancreas appeared <span className="highlight">normal on ultrasound</span>; <span className="highlight">serum amylase and lipase within normal limits</span>.</td>
                   </tr>
                   <tr>
                     <td>Ovarian torsion</td>
                     <td>
                       <span className="diff-badge excluded">EXCLUDED</span>
                     </td>
-                    <td>MRI demonstrated both ovaries were normal in size and signal intensity with no evidence of torsion.</td>
+                    <td>MRI demonstrated both <span className="highlight">ovaries were normal in size and signal intensity</span> with <span className="highlight">no evidence of torsion</span>.</td>
                   </tr>
                   <tr>
                     <td>Placental abruption / Obstetric cause</td>
                     <td>
                       <span className="diff-badge excluded">EXCLUDED</span>
                     </td>
-                    <td>MRI showed a single live intrauterine pregnancy with a normal anterior placenta and no imaging features of placental pathology.</td>
+                    <td>MRI showed a <span className="highlight">single live intrauterine pregnancy</span> with a <span className="highlight">normal anterior placenta</span> and <span className="highlight">no imaging features of placental pathology</span>.</td>
                   </tr>
                   <tr>
                     <td>Hyperemesis gravidarum</td>
                     <td>
                       <span className="diff-badge excluded">EXCLUDED</span>
                     </td>
-                    <td>Pain dominant over vomiting; onset after 16 weeks; bilious (not bilious-free) emesis; obstruction pattern confirmed on imaging.</td>
+                    <td><span className="highlight">Pain dominant over vomiting</span>; onset after 16 weeks; <span className="highlight-danger">bilious (not bilious-free) emesis</span>; <span className="highlight-danger">obstruction pattern confirmed on imaging</span>.</td>
                   </tr>
                 </tbody>
               </table>
@@ -1292,12 +1292,12 @@ export default function Home() {
                   <span className="outcome-event-time">Emergency</span>
                 </div>
                 <p className="outcome-event-desc">
-                  Emergency laparoscopic Ladd&apos;s procedure with detorsion and appendicectomy.
+                  Emergency <span className="highlight">laparoscopic Ladd&apos;s procedure</span> with <span className="highlight">detorsion</span> and <span className="highlight">appendicectomy</span>.
                 </p>
                 <ul className="outcome-event-details">
-                  <li>Intraoperative finding: midgut malrotation with volvulus</li>
-                  <li>Bowel viability satisfactory post-detorsion</li>
-                  <li>Fetal heart rate monitored throughout — reassuring</li>
+                  <li>Intraoperative finding: <span className="highlight-danger">midgut malrotation with volvulus</span></li>
+                  <li><span className="highlight">Bowel viability satisfactory</span> post-detorsion</li>
+                  <li>Fetal heart rate monitored throughout — <span className="highlight">reassuring</span></li>
                 </ul>
               </div>
 
@@ -1309,12 +1309,12 @@ export default function Home() {
                   <span className="outcome-event-time">Postoperative</span>
                 </div>
                 <p className="outcome-event-desc">
-                  Uneventful postoperative recovery and stabilization.
+                  Uneventful <span className="highlight">postoperative recovery</span> and stabilization.
                 </p>
                 <ul className="outcome-event-details">
-                  <li>Gradual return of bowel function</li>
-                  <li>Oral feeds resumed as tolerated from POD 2</li>
-                  <li>Maternal and fetal status remained stable</li>
+                  <li>Gradual <span className="highlight">return of bowel function</span></li>
+                  <li><span className="highlight">Oral feeds resumed</span> as tolerated from POD 2</li>
+                  <li>Maternal and fetal status remained <span className="highlight">stable</span></li>
                 </ul>
               </div>
 
@@ -1326,10 +1326,10 @@ export default function Home() {
                   <span className="outcome-event-time">Diagnostic</span>
                 </div>
                 <p className="outcome-event-desc">
-                  Cervical insufficiency diagnosed on routine follow-up scan.
+                  <span className="highlight-danger">Cervical insufficiency</span> diagnosed on routine follow-up scan.
                 </p>
                 <ul className="outcome-event-details">
-                  <li>Absent cervical length with internal os funnelling</li>
+                  <li><span className="highlight-danger">Absent cervical length</span> with <span className="highlight-danger">internal os funnelling</span></li>
                   <li>No uterine contractions or vaginal bleeding reported</li>
                 </ul>
               </div>
@@ -1342,12 +1342,12 @@ export default function Home() {
                   <span className="outcome-event-time">Therapeutic</span>
                 </div>
                 <p className="outcome-event-desc">
-                  Emergency McDonald cervical cerclage performed.
+                  Emergency <span className="highlight">McDonald cervical cerclage</span> performed.
                 </p>
                 <ul className="outcome-event-details">
-                  <li>Indication: cervical insufficiency with absent cervical length and funnelling</li>
+                  <li>Indication: <span className="highlight-danger">cervical insufficiency</span> with <span className="highlight-danger">absent cervical length and funnelling</span></li>
                   <li>Procedure uneventful and well-tolerated</li>
-                  <li>Tocolysis and progesterone support initiated</li>
+                  <li><span className="highlight">Tocolysis</span> and <span className="highlight">progesterone support</span> initiated</li>
                 </ul>
               </div>
 
@@ -1359,7 +1359,7 @@ export default function Home() {
                   <span className="outcome-event-time">Post-procedure</span>
                 </div>
                 <p className="outcome-event-desc">
-                  Discharged in stable maternal condition with viable intrauterine pregnancy.
+                  Discharged in <span className="highlight">stable maternal condition</span> with <span className="highlight">viable intrauterine pregnancy</span>.
                 </p>
                 <ul className="outcome-event-details">
                   <li>Tolerating oral diet, pain controlled</li>
@@ -1379,9 +1379,9 @@ export default function Home() {
                   Regular antenatal follow-up.
                 </p>
                 <ul className="outcome-event-details">
-                  <li>Serial cervical length monitoring every 2 weeks</li>
-                  <li>Fetal growth and well-being assessment</li>
-                  <li>Continued progesterone and necessary supplements</li>
+                  <li>Serial <span className="highlight">cervical length monitoring</span> every 2 weeks</li>
+                  <li><span className="highlight">Fetal growth and well-being</span> assessment</li>
+                  <li>Continued <span className="highlight">progesterone</span> and necessary supplements</li>
                 </ul>
               </div>
             </div>
@@ -1390,11 +1390,11 @@ export default function Home() {
             <div className="outcome-results">
               <BorderGlow className="outcome-card teal" edgeSensitivity={28} glowColor="166 76 45" backgroundColor="rgba(253, 252, 250, 0.9)" borderRadius={16} glowRadius={36} glowIntensity={1.4} coneSpread={26} colors={['#0F6E56', '#1D9E75', '#0C2340']} fillOpacity={0.05}>
                 <h4>💙 Maternal Outcome</h4>
-                <p>Uneventful postoperative recovery with preserved maternal health. Stable at 6-week review.</p>
+                <p>Uneventful <span className="highlight">postoperative recovery</span> with preserved <span className="highlight">maternal health</span>. <span className="highlight">Stable</span> at 6-week review.</p>
               </BorderGlow>
               <BorderGlow className="outcome-card purple" edgeSensitivity={28} glowColor="220 70 55" backgroundColor="rgba(253, 252, 250, 0.9)" borderRadius={16} glowRadius={36} glowIntensity={1.4} coneSpread={26} colors={['#6B21A8', '#A855F7', '#0C2340']} fillOpacity={0.05}>
                 <h4>👶 Fetal Outcome</h4>
-                <p>Pregnancy continued; live birth at 37 weeks by elective LSCS with healthy neonate.</p>
+                <p><span className="highlight">Pregnancy continued</span>; <span className="highlight">live birth at 37 weeks</span> by elective <span className="highlight">LSCS</span> with <span className="highlight">healthy neonate</span>.</p>
               </BorderGlow>
             </div>
           </div>

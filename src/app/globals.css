@@ -420,10 +420,14 @@ a {
   scrollbar-width: thin;
 }
 
+.timeline-strip-container .container {
+  max-width: 1200px;
+}
+
 .timeline-strip {
   display: flex;
   justify-content: space-between;
-  min-width: 800px;
+  min-width: 1050px;
   position: relative;
   padding: 0 1.5rem;
 }
@@ -478,7 +482,7 @@ a {
 .timeline-strip-sublabel {
   font-size: 11px;
   color: var(--slate-light);
-  max-width: 120px;
+  max-width: 140px;
   line-height: 1.3;
 }
 
