@@ -91,11 +91,16 @@ export default function Home() {
 
   // Leaderboard State (Section 10)
   const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[]>([
-    { rank: 1, name: "Dr. R. Kumar", score: 10, level: "Expert", badgeClass: "expert" },
-    { rank: 2, name: "Dr. S. Patel", score: 9, level: "Expert", badgeClass: "expert" },
-    { rank: 3, name: "Dr. A. Nair", score: 8, level: "Advanced", badgeClass: "advanced" },
-    { rank: 4, name: "Dr. M. Verma", score: 8, level: "Advanced", badgeClass: "advanced" },
-    { rank: 5, name: "Dr. T. Rao", score: 6, level: "Intermediate", badgeClass: "intermediate" },
+    { rank: "🥇", name: "Yazhini", score: 10, level: "Expert", badgeClass: "expert" },
+    { rank: "🥈", name: "Devi", score: 9, level: "Expert", badgeClass: "expert" },
+    { rank: "🥉", name: "Sanjay", score: 8, level: "Advanced", badgeClass: "advanced" },
+    { rank: 4, name: "Harishree", score: 8, level: "Advanced", badgeClass: "advanced" },
+    { rank: 5, name: "neha", score: 7, level: "Advanced", badgeClass: "advanced" },
+    { rank: 6, name: "deepak", score: 6, level: "Intermediate", badgeClass: "intermediate" },
+    { rank: 7, name: "ananya", score: 5, level: "Intermediate", badgeClass: "intermediate" },
+    { rank: 8, name: "rajanbabu", score: 4, level: "Review Needed", badgeClass: "review" },
+    { rank: 9, name: "Diwagaran", score: 3, level: "Review Needed", badgeClass: "review" },
+    { rank: 10, name: "kavya", score: 2, level: "Review Needed", badgeClass: "review" },
   ]);
   const [userName, setUserName] = useState("");
   const [leaderboardSubmitted, setLeaderboardSubmitted] = useState(false);
@@ -767,19 +772,19 @@ export default function Home() {
                 <BorderGlow className="info-block" edgeSensitivity={28} glowColor="166 76 45" backgroundColor="rgba(253, 252, 250, 0.9)" borderRadius={14} glowRadius={35} glowIntensity={1.4} coneSpread={26} colors={['#0F6E56', '#1D9E75', '#0C2340']} fillOpacity={0.05}>
                   <div className="info-block-title">Clinical History</div>
                   <div className="info-block-content">
-                    <p><strong>Age/Parity:</strong> 23-year-old primigravida at 20+1 weeks gestation.</p>
-                    <p><strong>Presentation:</strong> 2-day history of acute periumbilical abdominal pain and persistent bilious vomiting.</p>
+                    <p><strong>Age/Parity:</strong> 23-year-old primigravida at <span className="highlight">20+1 weeks gestation</span>.</p>
+                    <p><strong>Presentation:</strong> 2-day history of <span className="highlight-danger">acute periumbilical abdominal pain</span> and persistent <span className="highlight-danger">bilious vomiting</span>.</p>
                     <p><strong>Obstetric History:</strong> Pregnancy confirmed at 45 days of amenorrhoea. Reassuring prior prenatal scans.</p>
-                    <p><strong>Medical History:</strong> Episode of enteric fever at 11 weeks gestation, treated conservatively. No prior surgical interventions or chronic comorbidities.</p>
+                    <p><strong>Medical History:</strong> Episode of <span className="highlight">enteric fever</span> at 11 weeks gestation, treated conservatively. No prior surgical interventions or chronic comorbidities.</p>
                   </div>
                 </BorderGlow>
                 <BorderGlow className="info-block" edgeSensitivity={28} glowColor="166 76 45" backgroundColor="rgba(253, 252, 250, 0.9)" borderRadius={14} glowRadius={35} glowIntensity={1.4} coneSpread={26} colors={['#0F6E56', '#1D9E75', '#0C2340']} fillOpacity={0.05}>
                   <div className="info-block-title">Key Clinical Flags</div>
                   <div className="info-block-content">
-                    <p>🔴 <strong>Bilious vomiting:</strong> Strongly points to proximal gastrointestinal mechanical obstruction.</p>
-                    <p>🔴 <strong>Periumbilical pain:</strong> Localises pathology to midgut structures.</p>
-                    <p>🔴 <strong>Oral intolerance:</strong> Complete obstruction pattern.</p>
-                    <p>🔴 <strong>PV bleeding:</strong> Demanded immediate exclusion of concurrent obstetric emergencies (placental abruption or cervical dilation).</p>
+                    <p>🔴 <strong>Bilious vomiting:</strong> Strongly points to <span className="highlight-danger">proximal gastrointestinal mechanical obstruction</span>.</p>
+                    <p>🔴 <strong>Periumbilical pain:</strong> Localises pathology to <span className="highlight">midgut structures</span>.</p>
+                    <p>🔴 <strong>Oral intolerance:</strong> <span className="highlight-danger">Complete obstruction pattern</span>.</p>
+                    <p>🔴 <strong>PV bleeding:</strong> Demanded immediate exclusion of concurrent obstetric emergencies (<span className="highlight">placental abruption</span> or <span className="highlight">cervical dilation</span>).</p>
                   </div>
                 </BorderGlow>
               </div>
@@ -791,16 +796,16 @@ export default function Home() {
                 <BorderGlow className="info-block" edgeSensitivity={28} glowColor="166 76 45" backgroundColor="rgba(253, 252, 250, 0.9)" borderRadius={14} glowRadius={35} glowIntensity={1.4} coneSpread={26} colors={['#0F6E56', '#1D9E75', '#0C2340']} fillOpacity={0.05}>
                   <div className="info-block-title">General & Abdominal Examination</div>
                   <div className="info-block-content">
-                    <p><strong>Systemic Status:</strong> Conscious, oriented, but visibly distressed and in acute pain.</p>
-                    <p><strong>Vital Signs:</strong> Severe pallor, mild tachycardia (106 bpm), blood pressure 110/70 mmHg, afebrile.</p>
-                    <p><strong>Abdomen:</strong> Uterus corresponds to 20 weeks size. Diffuse abdominal tenderness, guarding localized maximal in the periumbilical region. No signs of generalised peritonitis.</p>
+                    <p><strong>Systemic Status:</strong> Conscious, oriented, but visibly distressed and in <span className="highlight-danger">acute pain</span>.</p>
+                    <p><strong>Vital Signs:</strong> Severe <span className="highlight-danger">pallor</span>, mild <span className="highlight-danger">tachycardia (106 bpm)</span>, blood pressure 110/70 mmHg, afebrile.</p>
+                    <p><strong>Abdomen:</strong> Uterus corresponds to 20 weeks size. Diffuse abdominal tenderness, <span className="highlight-danger">guarding localized maximal in the periumbilical region</span>. No signs of generalised peritonitis.</p>
                   </div>
                 </BorderGlow>
                 <BorderGlow className="info-block" edgeSensitivity={28} glowColor="166 76 45" backgroundColor="rgba(253, 252, 250, 0.9)" borderRadius={14} glowRadius={35} glowIntensity={1.4} coneSpread={26} colors={['#0F6E56', '#1D9E75', '#0C2340']} fillOpacity={0.05}>
                   <div className="info-block-title">Obstetric Assessment</div>
                   <div className="info-block-content">
-                    <p><strong>Fetal Heart Rate:</strong> 144 bpm, reassuring and regular.</p>
-                    <p><strong>Speculum & Vaginal Examination:</strong> Minimal fresh blood noted per vaginum. Digital examination revealed a soft cervix with the external os starting to funnel/open.</p>
+                    <p><strong>Fetal Heart Rate:</strong> <span className="highlight">144 bpm</span>, reassuring and regular.</p>
+                    <p><strong>Speculum & Vaginal Examination:</strong> Minimal fresh blood noted per vaginum. Digital examination revealed a soft cervix with the <span className="highlight-danger">external os starting to funnel/open</span>.</p>
                   </div>
                 </BorderGlow>
               </div>
@@ -880,8 +885,8 @@ export default function Home() {
                 <BorderGlow className="info-block" edgeSensitivity={28} glowColor="166 76 45" backgroundColor="rgba(253, 252, 250, 0.9)" borderRadius={14} glowRadius={35} glowIntensity={1.4} coneSpread={26} colors={['#0F6E56', '#1D9E75', '#0C2340']} fillOpacity={0.05}>
                   <div className="info-block-title">Abdominal Ultrasound (USG)</div>
                   <div className="info-block-content">
-                    <p>🌀 <strong>The Whirlpool Sign:</strong> Doppler USG demonstrated clockwise swirling of mesenteric vessels and mesentery around the axis of the superior mesenteric artery (SMA).</p>
-                    <p><strong>Bowel Loops:</strong> Dilated, fluid-filled small bowel loops in the central and upper abdomen.</p>
+                    <p>🌀 <strong>The Whirlpool Sign:</strong> Doppler USG demonstrated clockwise swirling of <span className="highlight">mesenteric vessels</span> and <span className="highlight">mesentery</span> around the axis of the <span className="highlight">superior mesenteric artery (SMA)</span>.</p>
+                    <p><strong>Bowel Loops:</strong> <span className="highlight-danger">Dilated, fluid-filled small bowel loops</span> in the central and upper abdomen.</p>
                     <p><strong>Solid Organs:</strong> Normal gallbladder, liver, pancreas, and kidneys. No free fluid.</p>
                   </div>
                 </BorderGlow>
@@ -903,17 +908,17 @@ export default function Home() {
                 <BorderGlow className="info-block" edgeSensitivity={28} glowColor="166 76 45" backgroundColor="rgba(253, 252, 250, 0.9)" borderRadius={14} glowRadius={35} glowIntensity={1.4} coneSpread={26} colors={['#0F6E56', '#1D9E75', '#0C2340']} fillOpacity={0.05}>
                   <div className="info-block-title">Abdominal MRI (No Contrast)</div>
                   <div className="info-block-content">
-                    <p>🌀 <strong>Mesenteric Twisting:</strong> Clear confirmation of the &apos;whirlpool sign&apos; around the SMA pedicle.</p>
-                    <p><strong>Obstruction:</strong> Closed-loop obstruction involving the mid-jejunum with distended proximal loops.</p>
+                    <p>🌀 <strong>Mesenteric Twisting:</strong> Clear confirmation of the <span className="highlight-danger">whirlpool sign</span> around the SMA pedicle.</p>
+                    <p><strong>Obstruction:</strong> <span className="highlight-danger">Closed-loop obstruction</span> involving the mid-jejunum with distended proximal loops.</p>
                     <p><strong>Viability Indicators:</strong> Preserved bowel wall enhancement rules out complete transmural necrosis at this stage.</p>
-                    <p><strong>Positioning:</strong> Right-sided small bowel loops and left-sided colon, confirming underlying congenital intestinal malrotation.</p>
+                    <p><strong>Positioning:</strong> Right-sided small bowel loops and left-sided colon, confirming underlying <span className="highlight">congenital intestinal malrotation</span>.</p>
                   </div>
                 </BorderGlow>
                 <BorderGlow className="info-block" edgeSensitivity={28} glowColor="166 76 45" backgroundColor="rgba(253, 252, 250, 0.9)" borderRadius={14} glowRadius={35} glowIntensity={1.4} coneSpread={26} colors={['#0F6E56', '#1D9E75', '#0C2340']} fillOpacity={0.05}>
                   <div className="info-block-title">Cervical & Pelvic MRI</div>
                   <div className="info-block-content">
-                    <p>⚠️ <strong>Cervical Funnelling:</strong> Severe internal os funnelling (&gt;50% of cervical length) with near-complete loss of measurable cervical length.</p>
-                    <p><strong>Interpretation:</strong> Highly consistent with cervical insufficiency/incompetence secondary to increased intra-abdominal pressure and underlying pathology.</p>
+                    <p>⚠️ <strong>Cervical Funnelling:</strong> Severe <span className="highlight-danger">internal os funnelling (&gt;50% of cervical length)</span> with near-complete <span className="highlight-danger">loss of measurable cervical length</span>.</p>
+                    <p><strong>Interpretation:</strong> Highly consistent with <span className="highlight-danger">cervical insufficiency/incompetence</span> secondary to increased intra-abdominal pressure and underlying pathology.</p>
                     <p><strong>Pregnancy:</strong> Intrauterine viable single fetus in breech presentation; amniotic fluid index within normal limits.</p>
                   </div>
                 </BorderGlow>
@@ -925,7 +930,7 @@ export default function Home() {
               <BorderGlow className="final-diagnosis-card" edgeSensitivity={25} glowColor="210 70 35" backgroundColor="rgba(12, 35, 64, 0.96)" borderRadius={18} glowRadius={50} glowIntensity={1.5} coneSpread={28} colors={['#0F6E56', '#1D9E75', '#1a5276']} fillOpacity={0.07}>
                 <span className="final-diagnosis-label">FINAL DIAGNOSIS</span>
                 <p className="final-diagnosis-text">
-                  &ldquo;Acute midgut volvulus secondary to congenital intestinal malrotation in a 20+1-week primigravida, successfully managed with emergency laparoscopic Ladd&apos;s procedure, followed by emergency McDonald cervical cerclage for cervical insufficiency.&rdquo;
+                  &ldquo;Acute <span className="highlight-danger">midgut volvulus</span> secondary to congenital <span className="highlight">intestinal malrotation</span> in a 20+1-week primigravida, successfully managed with emergency laparoscopic <span className="highlight">Ladd&apos;s procedure</span>, followed by emergency <span className="highlight">McDonald cervical cerclage</span> for <span className="highlight-danger">cervical insufficiency</span>.&rdquo;
                 </p>
               </BorderGlow>
             </div>
@@ -1019,7 +1024,7 @@ export default function Home() {
                 </div>
                 <div className="surgical-step-body">
                   <p className="surgical-step-desc">
-                    Maternal resuscitation with intravenous fluids, electrolyte correction, analgesia, antiemetics, and fetal well-being assessment. Nasogastric tube placed for decompression.
+                    <span className="highlight">Maternal resuscitation</span> with intravenous fluids, electrolyte correction, analgesia, antiemetics, and <span className="highlight">fetal well-being assessment</span>. <span className="highlight">Nasogastric tube</span> placed for decompression.
                   </p>
                 </div>
               </BorderGlow>
@@ -1032,7 +1037,7 @@ export default function Home() {
                 </div>
                 <div className="surgical-step-body">
                   <p className="surgical-step-desc">
-                    Abdominal ultrasound followed by MRI confirming <strong>midgut malrotation with midgut volvulus</strong>, prompting emergency surgical intervention.
+                    Abdominal ultrasound followed by MRI confirming <span className="highlight-danger">midgut malrotation with midgut volvulus</span>, prompting emergency surgical intervention.
                   </p>
                 </div>
               </BorderGlow>
@@ -1045,7 +1050,7 @@ export default function Home() {
                 </div>
                 <div className="surgical-step-body">
                   <p className="surgical-step-desc">
-                    Intraoperative confirmation of midgut volvulus with assessment of bowel viability and exclusion of bowel ischaemia. 180° clockwise volvulus noted; bowel viable post-detorsion.
+                    Intraoperative confirmation of <span className="highlight-danger">midgut volvulus</span> with assessment of <span className="highlight">bowel viability</span> and exclusion of bowel ischaemia. 180° clockwise volvulus noted; <span className="highlight">bowel viable post-detorsion</span>.
                   </p>
                 </div>
               </BorderGlow>
@@ -1058,7 +1063,7 @@ export default function Home() {
                 </div>
                 <div className="surgical-step-body">
                   <p className="surgical-step-desc">
-                    Comprising: detorsion of the volvulus (counterclockwise rotation), division of Ladd&apos;s bands (release of duodenal obstruction), widening of the mesenteric base, bowel repositioning (small bowel right, colon left), and incidental appendicectomy.
+                    Comprising: <span className="highlight">detorsion of the volvulus (counterclockwise rotation)</span>, <span className="highlight">division of Ladd&apos;s bands</span> (release of duodenal obstruction), <span className="highlight">widening of the mesenteric base</span>, bowel repositioning (small bowel right, colon left), and <span className="highlight">incidental appendicectomy</span>.
                   </p>
                 </div>
               </BorderGlow>
@@ -1071,7 +1076,7 @@ export default function Home() {
                 </div>
                 <div className="surgical-step-body">
                   <p className="surgical-step-desc">
-                    Continuous maternal monitoring, serial fetal heart rate assessment, gradual enteral nutrition, tocolysis initiated, and routine antenatal surveillance.
+                    Continuous maternal monitoring, serial <span className="highlight">fetal heart rate assessment</span>, gradual enteral nutrition, <span className="highlight">tocolysis initiated</span>, and routine antenatal surveillance.
                   </p>
                 </div>
               </BorderGlow>
@@ -1084,7 +1089,7 @@ export default function Home() {
                 </div>
                 <div className="surgical-step-body">
                   <p className="surgical-step-desc">
-                    Detection of absent cervical length with internal os funnelling on follow-up scan at postoperative day 12, followed by <strong>emergency McDonald purse-string cervical cerclage</strong> at the cervicovaginal junction, continuation of high-risk antenatal care and progesterone support.
+                    Detection of <span className="highlight-danger">absent cervical length with internal os funnelling</span> on follow-up scan at postoperative day 12, followed by <span className="highlight-danger">emergency McDonald purse-string cervical cerclage</span> at the cervicovaginal junction, continuation of high-risk antenatal care and <span className="highlight">progesterone support</span>.
                   </p>
                 </div>
               </BorderGlow>
@@ -1692,8 +1697,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="site-footer-right">
-                <div>Cite as: Mehta A, Iyer R, Khan S. 2026.</div>
-                <div style={{ marginTop: "0.5rem", color: "var(--slate-light)", fontSize: "10.5px" }}>
+                <div style={{ color: "var(--navy)", fontSize: "14.5px", fontWeight: 600, letterSpacing: "0.02em" }}>
                   Developed by Yazhini Diwagaran, Muruganandam Harishree, Sanjay
                 </div>
               </div>
