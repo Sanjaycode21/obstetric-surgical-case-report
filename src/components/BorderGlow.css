@@ -140,3 +140,44 @@
   border-radius: inherit; /* Inherit rounded corners from outer container */
   z-index: 1;
 }
+
+/*
+ * Redirect card padding from BorderGlow's outer container (.border-glow-card) 
+ * to its inner container (.border-glow-inner) to prevent content clipping 
+ * at the rounded corners.
+ */
+.border-glow-card.final-diagnosis-card {
+  padding: 0 !important;
+}
+.border-glow-card.final-diagnosis-card > .border-glow-inner {
+  padding: 2.5rem;
+}
+
+.border-glow-card.outcome-card {
+  padding: 0 !important;
+}
+.border-glow-card.outcome-card > .border-glow-inner {
+  padding: 1.5rem;
+}
+
+.border-glow-card.info-block {
+  padding: 0 !important;
+}
+.border-glow-card.info-block > .border-glow-inner {
+  padding: 1.5rem;
+}
+
+.border-glow-card.surgical-step-card {
+  padding: 0 !important;
+}
+.border-glow-card.surgical-step-card > .border-glow-inner {
+  padding: 1.75rem 2rem 2rem 2rem;
+}
+
+.border-glow-card.timeline-strip-glow {
+  padding: 0 !important;
+}
+.border-glow-card.timeline-strip-glow > .border-glow-inner {
+  padding: 1.5rem 0;
+}
+

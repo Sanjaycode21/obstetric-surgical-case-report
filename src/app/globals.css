@@ -415,13 +415,17 @@ a {
   -webkit-backdrop-filter: blur(12px);
   border-top: none;
   border-bottom: none;
-  padding: 2rem 0;
+  padding: 1rem 0;
   overflow-x: auto;
   scrollbar-width: thin;
 }
 
 .timeline-strip-container .container {
   max-width: 1200px;
+}
+
+.timeline-strip-glow {
+  padding: 1.5rem 0;
 }
 
 .timeline-strip {
@@ -907,8 +911,6 @@ a {
 /* Diagnostic Final Card */
 .final-diagnosis-card {
   padding: 2.5rem;
-  border: 1px solid rgba(15, 35, 55, 0.10) !important;
-  background: rgba(255, 255, 255, 0.78) !important;
 }
 
 .final-diagnosis-label {
@@ -1210,17 +1212,6 @@ a {
 
 .outcome-card {
   padding: 1.5rem;
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-}
-
-.outcome-card.teal {
-  border-left: 3px solid var(--teal);
-}
-
-.outcome-card.purple {
-  border-left: 3px solid var(--purple-dark);
 }
 
 .outcome-card h4 {

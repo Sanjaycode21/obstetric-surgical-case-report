@@ -557,43 +557,45 @@ export default function Home() {
         {/* CASE TIMELINE BAR */}
         <div className="timeline-strip-container">
           <div className="container">
-            <div className="timeline-strip">
-              <div className="timeline-strip-item reveal">
-                <div className="timeline-strip-dot teal">✓</div>
-                <div className="timeline-strip-label">6 Weeks</div>
-                <div className="timeline-strip-sublabel">Pregnancy confirmed</div>
+            <BorderGlow className="timeline-strip-glow" edgeSensitivity={20} glowColor="166 76 45" backgroundColor="rgba(253, 252, 250, 0.9)" borderRadius={16} glowRadius={36} glowIntensity={1.4} coneSpread={26} colors={['#0F6E56', '#1D9E75', '#0C2340']} fillOpacity={0.05}>
+              <div className="timeline-strip">
+                <div className="timeline-strip-item reveal">
+                  <div className="timeline-strip-dot teal">✓</div>
+                  <div className="timeline-strip-label">6 Weeks</div>
+                  <div className="timeline-strip-sublabel">Pregnancy confirmed</div>
+                </div>
+                <div className="timeline-strip-item reveal">
+                  <div className="timeline-strip-dot amber">!</div>
+                  <div className="timeline-strip-label">11 Weeks</div>
+                  <div className="timeline-strip-sublabel">Enteric fever</div>
+                </div>
+                <div className="timeline-strip-item reveal">
+                  <div className="timeline-strip-dot red">▲</div>
+                  <div className="timeline-strip-label">20+1 Weeks</div>
+                  <div className="timeline-strip-sublabel">Acute abdomen & diagnosis</div>
+                </div>
+                <div className="timeline-strip-item reveal">
+                  <div className="timeline-strip-dot red">▲</div>
+                  <div className="timeline-strip-label">20+2 Weeks</div>
+                  <div className="timeline-strip-sublabel">Emergency Ladd&apos;s procedure</div>
+                </div>
+                <div className="timeline-strip-item reveal">
+                  <div className="timeline-strip-dot amber">!</div>
+                  <div className="timeline-strip-label">22 Weeks</div>
+                  <div className="timeline-strip-sublabel">Cervical insufficiency & cerclage</div>
+                </div>
+                <div className="timeline-strip-item reveal">
+                  <div className="timeline-strip-dot teal">✓</div>
+                  <div className="timeline-strip-label">24+1 Weeks</div>
+                  <div className="timeline-strip-sublabel">Recovery & discharge</div>
+                </div>
+                <div className="timeline-strip-item reveal">
+                  <div className="timeline-strip-dot teal">✓</div>
+                  <div className="timeline-strip-label">37 Weeks</div>
+                  <div className="timeline-strip-sublabel">Live birth via LSCS</div>
+                </div>
               </div>
-              <div className="timeline-strip-item reveal">
-                <div className="timeline-strip-dot amber">!</div>
-                <div className="timeline-strip-label">11 Weeks</div>
-                <div className="timeline-strip-sublabel">Enteric fever</div>
-              </div>
-              <div className="timeline-strip-item reveal">
-                <div className="timeline-strip-dot red">▲</div>
-                <div className="timeline-strip-label">20+1 Weeks</div>
-                <div className="timeline-strip-sublabel">Acute abdomen & diagnosis</div>
-              </div>
-              <div className="timeline-strip-item reveal">
-                <div className="timeline-strip-dot red">▲</div>
-                <div className="timeline-strip-label">20+2 Weeks</div>
-                <div className="timeline-strip-sublabel">Emergency Ladd&apos;s procedure</div>
-              </div>
-              <div className="timeline-strip-item reveal">
-                <div className="timeline-strip-dot amber">!</div>
-                <div className="timeline-strip-label">22 Weeks</div>
-                <div className="timeline-strip-sublabel">Cervical insufficiency & cerclage</div>
-              </div>
-              <div className="timeline-strip-item reveal">
-                <div className="timeline-strip-dot teal">✓</div>
-                <div className="timeline-strip-label">24+1 Weeks</div>
-                <div className="timeline-strip-sublabel">Recovery & discharge</div>
-              </div>
-              <div className="timeline-strip-item reveal">
-                <div className="timeline-strip-dot teal">✓</div>
-                <div className="timeline-strip-label">37 Weeks</div>
-                <div className="timeline-strip-sublabel">Live birth via LSCS</div>
-              </div>
-            </div>
+            </BorderGlow>
           </div>
         </div>
 
@@ -927,7 +929,7 @@ export default function Home() {
 
             {/* Step 6: Final Diagnosis */}
             <div className={`tab-panel ${activeTab === 6 ? "active" : ""}`}>
-              <BorderGlow className="final-diagnosis-card" edgeSensitivity={25} glowColor="210 70 35" backgroundColor="rgba(12, 35, 64, 0.96)" borderRadius={18} glowRadius={50} glowIntensity={1.5} coneSpread={28} colors={['#0F6E56', '#1D9E75', '#1a5276']} fillOpacity={0.07}>
+              <BorderGlow className="final-diagnosis-card" edgeSensitivity={25} glowColor="210 70 35" backgroundColor="rgba(253, 252, 250, 0.9)" borderRadius={18} glowRadius={50} glowIntensity={1.5} coneSpread={28} colors={['#0F6E56', '#1D9E75', '#1a5276']} fillOpacity={0.07}>
                 <span className="final-diagnosis-label">FINAL DIAGNOSIS</span>
                 <p className="final-diagnosis-text">
                   &ldquo;Acute <span className="highlight-danger">midgut volvulus</span> secondary to congenital <span className="highlight">intestinal malrotation</span> in a 20+1-week primigravida, successfully managed with emergency laparoscopic <span className="highlight">Ladd&apos;s procedure</span>, followed by emergency <span className="highlight">McDonald cervical cerclage</span> for <span className="highlight-danger">cervical insufficiency</span>.&rdquo;
